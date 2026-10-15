@@ -23,7 +23,27 @@ I measure before I claim. I load test with k6, keep Core Web Vitals inside their
 Repositories where my pull requests were merged, most recent first. A daily workflow refreshes this list and the waterfall above.
 
 <!--START_SECTION:prlist-->
+- [wshobson/agents](https://github.com/wshobson/agents/pulls?q=is%3Apr+author%3Ajwcastillo)
+- [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills/pulls?q=is%3Apr+author%3Ajwcastillo)
+- [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman/pulls?q=is%3Apr+author%3Ajwcastillo)
+- [NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector/pulls?q=is%3Apr+author%3Ajwcastillo)
+- [multica-ai/multica](https://github.com/multica-ai/multica/pulls?q=is%3Apr+author%3Ajwcastillo)
+- [grafana-cold-storage/xk6-output-prometheus-remote](https://github.com/grafana-cold-storage/xk6-output-prometheus-remote/pulls?q=is%3Apr+author%3Ajwcastillo)
+- [grafana-cold-storage/xk6-output-timescaledb](https://github.com/grafana-cold-storage/xk6-output-timescaledb/pulls?q=is%3Apr+author%3Ajwcastillo)
+- [grafana/xk6-output-influxdb](https://github.com/grafana/xk6-output-influxdb/pulls?q=is%3Apr+author%3Ajwcastillo)
+- [Dynatrace/xk6-output-dynatrace](https://github.com/Dynatrace/xk6-output-dynatrace/pulls?q=is%3Apr+author%3Ajwcastillo)
+- [srperf/PDD](https://github.com/srperf/PDD/pulls?q=is%3Apr+author%3Ajwcastillo)
+- [grafana-cold-storage/k6-timescaledb-stack](https://github.com/grafana-cold-storage/k6-timescaledb-stack/pulls?q=is%3Apr+author%3Ajwcastillo)
+- [CityOfZion/neo-scan](https://github.com/CityOfZion/neo-scan/pulls?q=is%3Apr+author%3Ajwcastillo)
+- [netlify/staticgen](https://github.com/netlify/staticgen/pulls?q=is%3Apr+author%3Ajwcastillo)
+- [titoBouzout/Dictionaries](https://github.com/titoBouzout/Dictionaries/pulls?q=is%3Apr+author%3Ajwcastillo)
+- [malahierba-lab/chile-rut](https://github.com/malahierba-lab/chile-rut/pulls?q=is%3Apr+author%3Ajwcastillo)
+- [vova07/yii2-start-users-module](https://github.com/vova07/yii2-start-users-module/pulls?q=is%3Apr+author%3Ajwcastillo)
+- [vova07/yii2-start-blogs-module](https://github.com/vova07/yii2-start-blogs-module/pulls?q=is%3Apr+author%3Ajwcastillo)
+- [vova07/yii2-start-comments-module](https://github.com/vova07/yii2-start-comments-module/pulls?q=is%3Apr+author%3Ajwcastillo)
+- [JayBizzle/Laravel-Migrations-Organiser](https://github.com/JayBizzle/Laravel-Migrations-Organiser/pulls?q=is%3Apr+author%3Ajwcastillo)
 <!--END_SECTION:prlist-->
+
 
 ### Sources
 
