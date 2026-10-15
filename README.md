@@ -18,9 +18,15 @@ x-also: AI agent tooling (Claude Code, Codex, OpenCode, Gemini CLI)
 
 I measure before I claim. I load test with k6, keep Core Web Vitals inside their budgets, design systems with Clean and Hexagonal Architecture, and audit AI agent skills with [NVIDIA SkillSpector](https://github.com/NVIDIA/SkillSpector) before sending the fixes upstream.
 
+### Preview · highlights
+
+- **k6 Prometheus remote-write output, Grafana's xk6 extension:** built its Grafana dashboards, including the [native histogram dashboard](https://github.com/grafana-cold-storage/xk6-output-prometheus-remote/pull/71) and [status-code rate and Apdex panels](https://github.com/grafana-cold-storage/xk6-output-prometheus-remote/pull/98) ([all 8 PRs](https://github.com/grafana-cold-storage/xk6-output-prometheus-remote/pulls?q=is%3Apr+author%3Ajwcastillo+is%3Amerged)). I also contributed to the [TimescaleDB](https://github.com/grafana-cold-storage/xk6-output-timescaledb/pull/11), [InfluxDB](https://github.com/grafana/xk6-output-influxdb/pull/13) and [Dynatrace](https://github.com/Dynatrace/xk6-output-dynatrace/pull/2) outputs.
+- **[NVIDIA/SkillSpector#645](https://github.com/NVIDIA/SkillSpector/pull/645):** removed three classes of analyzer false positives from the agent skill scanner.
+- **[wshobson/agents#765](https://github.com/wshobson/agents/pull/765)–[#768](https://github.com/wshobson/agents/pull/768):** restricted CORS in the FastAPI template and made it run end to end, and brought the monorepo, end-to-end testing and Git workflow skills up to current tool behavior.
+
 ### Response · `upstream-prs.json`
 
-Repositories where my pull requests were merged, most recent first. A daily workflow refreshes this list and the waterfall above.
+Every repository where my pull requests were merged, most recent first. A daily workflow refreshes this list and the waterfall above.
 
 <!--START_SECTION:prlist-->
 - [wshobson/agents](https://github.com/wshobson/agents/pulls?q=is%3Apr+author%3Ajwcastillo)
