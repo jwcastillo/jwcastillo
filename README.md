@@ -20,11 +20,10 @@ I measure before I claim. I load test with k6, keep Core Web Vitals inside their
 
 ### Response · `upstream-prs.json`
 
-- `200 merged` [NVIDIA/SkillSpector#645](https://github.com/NVIDIA/SkillSpector/pull/645): removed three classes of analyzer false positives.
-- `200 merged` [wshobson/agents#765](https://github.com/wshobson/agents/pull/765): restricted CORS origins and made the FastAPI template run end to end.
-- `200 merged` [wshobson/agents#766](https://github.com/wshobson/agents/pull/766) · [#767](https://github.com/wshobson/agents/pull/767) · [#768](https://github.com/wshobson/agents/pull/768): brought the monorepo, end-to-end testing and Git workflow skills up to current tool behavior.
-- `200 merged` [sickn33/agentic-awesome-skills#1929](https://github.com/sickn33/agentic-awesome-skills/pull/1929): moved the web performance skill to INP and fixed its tree-shaking and image advice.
-- `200 merged` [JuliusBrussee/caveman#1234](https://github.com/JuliusBrussee/caveman/pull/1234): documented that `/caveman-compress` sends the file to the model provider.
+Repositories where my pull requests were merged, most recent first. A daily workflow refreshes this list and the waterfall above.
+
+<!--START_SECTION:prlist-->
+<!--END_SECTION:prlist-->
 
 ### Sources
 

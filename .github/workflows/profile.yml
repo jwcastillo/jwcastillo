@@ -1,0 +1,49 @@
+name: Refresh profile
+
+on:
+  schedule:
+    - cron: "17 6 * * *" # daily, 06:17 UTC
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: refresh-profile
+  cancel-in-progress: false
+
+env:
+  # Repositories left out of both the README list and the waterfall: my own and work organizations
+  IGNORE: "jwcastillo/*:MINED-Lidd/*:luxxuapp/*"
+
+jobs:
+  pr-list:
+    runs-on: ubuntu-latest
+    steps:
+      # Writes the merged-PR list between the prlist markers in README.md and commits it
+      - uses: asciimoth/prlist@af3ab1f751eafbd1776fbc38da21cbf44a34dbaa # v0.1.2
+        with:
+          ignore: ${{ env.IGNORE }}
+          format: md
+
+  waterfall:
+    needs: pr-list
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@08eba0b27e820071cde6df949e0beb9ba4906955 # v4.3.0
+        with:
+          ref: main # include the README commit from pr-list
+      - name: Rebuild the waterfall from merged PRs
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh search prs --author "${{ github.repository_owner }}" --merged --limit 1000 \
+            --json repository > "$RUNNER_TEMP/prs.json"
+          python3 tools/waterfall.py --prs "$RUNNER_TEMP/prs.json" --ignore "$IGNORE"
+      - name: Commit if changed
+        run: |
+          git diff --quiet -- assets && exit 0
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git commit -m "chore: refresh waterfall from merged PRs" -- assets
+          git push

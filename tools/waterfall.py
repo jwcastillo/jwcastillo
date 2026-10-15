@@ -1,8 +1,18 @@
 """Generate the DevTools-style network waterfall hero for the GitHub profile.
 
 Writes assets/waterfall-{light,dark}{,-narrow}.svg. Run: python3 tools/waterfall.py
+
+With --prs, the upstream-prs.json row is rebuilt from a `gh search prs --merged
+--json repository` dump, so the animation tracks real merged pull requests:
+
+    gh search prs --author jwcastillo --merged --limit 1000 --json repository > prs.json
+    python3 tools/waterfall.py --prs prs.json --ignore "jwcastillo/*:MINED-Lidd/*"
 """
 
+import argparse
+import json
+from collections import Counter
+from fnmatch import fnmatch
 from pathlib import Path
 from xml.sax.saxutils import escape
 
@@ -257,7 +267,39 @@ text{{font-family:"Segoe UI",system-ui,-apple-system,BlinkMacSystemFont,Roboto,"
     )
 
 
+SUBTITLE_MAX = 46  # longest subtitle that fits the narrow variant
+
+
+def upstream_subtitle(prs: list[dict], ignore: str) -> str:
+    """Summarize merged PRs outside ignored repos, e.g. '9 merged PRs · agents, caveman'."""
+    patterns = [p for p in ignore.split(":") if p]
+    repos = Counter(
+        pr["repository"]["nameWithOwner"]
+        for pr in prs
+        if not any(fnmatch(pr["repository"]["nameWithOwner"], p) for p in patterns)
+    )
+    count = sum(repos.values())
+    text = f"{count} merged PR{'' if count == 1 else 's'}"
+    names: list[str] = []
+    for repo, _ in repos.most_common():
+        candidate = text + " · " + ", ".join(names + [repo.split("/")[1].lower()])
+        if len(candidate) > SUBTITLE_MAX:
+            break
+        names.append(repo.split("/")[1].lower())
+    return text + (" · " + ", ".join(names) if names else "")
+
+
 if __name__ == "__main__":
+    parser = argparse.ArgumentParser(description=__doc__.splitlines()[0])
+    parser.add_argument("--prs", type=Path, help="gh search prs --json repository output")
+    parser.add_argument("--ignore", default="", help="colon-separated owner/repo globs to skip")
+    args = parser.parse_args()
+    if args.prs:
+        subtitle = upstream_subtitle(json.loads(args.prs.read_text()), args.ignore)
+        REQUESTS = [
+            (n, subtitle, *rest) if n == "upstream-prs.json" else (n, sub, *rest)
+            for n, sub, *rest in REQUESTS
+        ]
     OUT.mkdir(exist_ok=True)
     for theme in THEMES:
         for narrow in (False, True):
