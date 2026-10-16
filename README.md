@@ -29,6 +29,7 @@ I measure before I claim. I load test with k6, keep Core Web Vitals inside their
 Every repository where my pull requests were merged, most recent first. A daily workflow refreshes this list and the waterfall above.
 
 <!--START_SECTION:prlist-->
+- [nucliweb/webperf-snippets](https://github.com/nucliweb/webperf-snippets/pulls?q=is%3Apr+author%3Ajwcastillo)
 - [wshobson/agents](https://github.com/wshobson/agents/pulls?q=is%3Apr+author%3Ajwcastillo)
 - [sickn33/agentic-awesome-skills](https://github.com/sickn33/agentic-awesome-skills/pulls?q=is%3Apr+author%3Ajwcastillo)
 - [JuliusBrussee/caveman](https://github.com/JuliusBrussee/caveman/pulls?q=is%3Apr+author%3Ajwcastillo)
@@ -49,6 +50,7 @@ Every repository where my pull requests were merged, most recent first. A daily 
 - [vova07/yii2-start-comments-module](https://github.com/vova07/yii2-start-comments-module/pulls?q=is%3Apr+author%3Ajwcastillo)
 - [JayBizzle/Laravel-Migrations-Organiser](https://github.com/JayBizzle/Laravel-Migrations-Organiser/pulls?q=is%3Apr+author%3Ajwcastillo)
 <!--END_SECTION:prlist-->
+
 
 
 ### Sources
