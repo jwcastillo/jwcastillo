@@ -42,7 +42,7 @@ Every repository where my pull requests were merged, most recent first. A daily 
 - [multica-ai/multica](https://github.com/multica-ai/multica/pulls?q=is%3Apr+author%3Ajwcastillo)
 - [grafana-cold-storage/xk6-output-prometheus-remote](https://github.com/grafana-cold-storage/xk6-output-prometheus-remote/pulls?q=is%3Apr+author%3Ajwcastillo)
 - [grafana-cold-storage/xk6-output-timescaledb](https://github.com/grafana-cold-storage/xk6-output-timescaledb/pulls?q=is%3Apr+author%3Ajwcastillo)
-- [grafana/xk6-output-influxdb](https://github.com/grafana/xk6-output-influxdb/pulls?q=is%3Apr+author%3Ajwcastillo)
+- [grafana-cold-storage/xk6-output-influxdb](https://github.com/grafana-cold-storage/xk6-output-influxdb/pulls?q=is%3Apr+author%3Ajwcastillo)
 - [Dynatrace/xk6-output-dynatrace](https://github.com/Dynatrace/xk6-output-dynatrace/pulls?q=is%3Apr+author%3Ajwcastillo)
 - [srperf/PDD](https://github.com/srperf/PDD/pulls?q=is%3Apr+author%3Ajwcastillo)
 - [grafana-cold-storage/k6-timescaledb-stack](https://github.com/grafana-cold-storage/k6-timescaledb-stack/pulls?q=is%3Apr+author%3Ajwcastillo)
@@ -55,6 +55,7 @@ Every repository where my pull requests were merged, most recent first. A daily 
 - [vova07/yii2-start-comments-module](https://github.com/vova07/yii2-start-comments-module/pulls?q=is%3Apr+author%3Ajwcastillo)
 - [JayBizzle/Laravel-Migrations-Organiser](https://github.com/JayBizzle/Laravel-Migrations-Organiser/pulls?q=is%3Apr+author%3Ajwcastillo)
 <!--END_SECTION:prlist-->
+
 
 
 
