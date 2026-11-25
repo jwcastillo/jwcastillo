@@ -29,6 +29,7 @@ I measure before I claim. I load test with k6, keep Core Web Vitals inside their
 Every repository where my pull requests were merged, most recent first. A daily workflow refreshes this list and the waterfall above.
 
 <!--START_SECTION:prlist-->
+- [TecnoRos-ar/Proyecto2-Regalitos](https://github.com/TecnoRos-ar/Proyecto2-Regalitos/pulls?q=is%3Apr+author%3Ajwcastillo)
 - [sofiigentaa/Gestion-de-Ingresos-y-Gastos-para-Emprendedor](https://github.com/sofiigentaa/Gestion-de-Ingresos-y-Gastos-para-Emprendedor/pulls?q=is%3Apr+author%3Ajwcastillo)
 - [NVIDIA/SkillSpector](https://github.com/NVIDIA/SkillSpector/pulls?q=is%3Apr+author%3Ajwcastillo)
 - [affaan-m/ECC](https://github.com/affaan-m/ECC/pulls?q=is%3Apr+author%3Ajwcastillo)
@@ -56,6 +57,7 @@ Every repository where my pull requests were merged, most recent first. A daily 
 - [vova07/yii2-start-comments-module](https://github.com/vova07/yii2-start-comments-module/pulls?q=is%3Apr+author%3Ajwcastillo)
 - [JayBizzle/Laravel-Migrations-Organiser](https://github.com/JayBizzle/Laravel-Migrations-Organiser/pulls?q=is%3Apr+author%3Ajwcastillo)
 <!--END_SECTION:prlist-->
+
 
 
 
